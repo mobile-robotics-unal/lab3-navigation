@@ -47,3 +47,32 @@ En Bug 2 el robot se dirige hacia la meta hasta que encuentra un obstaculo. Para
 
 # Algoritmos MAZE
 
+Los algoritmos MAZE tienen como obejtivo superar obstaculos de tipo laberinto, es decir, navegar en espacios con muros paralelos hasta llegar a la salida. 
+A continuación se presentan 3 de los algoritmos usados para este tipo de navegación:
+
+## Right-then-Left
+
+* El robot se avanza hasta encontrar un obstaculo.
+* El robot mira la distancia a la derecha.
+* El robot mira la distancia a la izquierda.
+* Si la distancia a la derecha es mayor, el robot gira en ese sentido. Si la distancia a la izquierda es mayor, entonces gira a la izquierda. Si ambas distancias son iguales, entonces gira a la izquierda.
+* El algoritmo se repite hasta llegar a la meta.
+
+
+## Left-then-Right
+
+* El robot se avanza hasta encontrar un obstaculo.
+* El robot mira la distancia a la derecha.
+* El robot mira la distancia a la izquierda.
+* Si la distancia a la izquierda es mayor, el robot gira en ese sentido. Si la distancia a la derecha es mayor, entonces gira a la derecha. Si ambas distancias son iguales, entonces gira a la derecha.
+* El algoritmo se repite hasta llegar a la meta.
+
+## Wall Following
+
+* El robot avanza haciendo pequeños ajustes para mantenerse paralelo a los bordes laterales.
+* Si el robot encuentra un obstaculo, debe girar a la izquierda en caso de que este siguendo el muro derecho, o a la derecha si sigue el muro izquierdo.
+* Si no encuentra un muro, el robot debe girar a la derecha (en caso de seguir muro derecho), o a la izquierda (en caso de seguir el muro izquierdo).
+* El algoritmo se repite hasta llegar a la meta.
+
+
+
