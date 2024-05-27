@@ -39,7 +39,11 @@ Luego el robot avanza 0.7 rotaciones (aproximadamente 15cm) con el fin de que el
 
 Una vez programado el algoritmo, se coloca en el laberinto real y se observa que es capaz de resolverlo satisfactoriamente.
 
-![](images/maze/maze_vid.mp4)
+[![](./images/maze/maze_vid.mp4)](https://raw.githubusercontent.com/mobile-robotics-unal/lab3-navigation/main/images/maze/maze_vid.mp4)
+
+<video width="320" height="240" controls>
+  <source src="[images/maze/maze_vid.mp4](https://raw.githubusercontent.com/mobile-robotics-unal/lab3-navigation/main/images/maze/maze_vid.mp4)" type="video/mp4">
+</video>
 
 
 Se observa que, a pesar de que se establece la comparación con el giroscopio a 80°, el robot tiende a girar un ángulo mayor, sin embargo, no supone un problema para la dimenciones del laberinto.
