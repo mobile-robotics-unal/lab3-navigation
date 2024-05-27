@@ -39,10 +39,8 @@ Luego el robot avanza 0.7 rotaciones (aproximadamente 15cm) con el fin de que el
 
 Una vez programado el algoritmo, se coloca en el laberinto real y se observa que es capaz de resolverlo satisfactoriamente.
 
-[![](./images/maze/maze_vid.mp4)](https://raw.githubusercontent.com/mobile-robotics-unal/lab3-navigation/main/images/maze/maze_vid.mp4)
-
 <video width="320" height="240" controls>
-  <source src="[images/maze/maze_vid.mp4](https://raw.githubusercontent.com/mobile-robotics-unal/lab3-navigation/main/images/maze/maze_vid.mp4)" type="video/mp4">
+  <source src="https://github.com/mobile-robotics-unal/lab3-navigation/assets/53503084/615e2bf7-3d6c-4814-a38a-0c553342edac" type="video/mp4">
 </video>
 
 
