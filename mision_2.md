@@ -3,13 +3,13 @@
 Esta misión tiene como objetivo que el LEGO EV3 sea capaz de salir de un laberinto, empezando desde la entrada P1 hasta la salida P2. El laberinto a resolver es:
 
 
-Para resolver el laberinto se utilizo el algoritmo Wall Following con el muro izquierdo, esto debido a su facil implementación y la efectividad del algoritmo. El LEGO EV3 fue programado con su IDE oficial utilizando lenguaje de bloques.
+Para resolver el laberinto se utilizo el algoritmo Wall Following con el muro izquierdo, esto debido a su fácil implementación y la efectividad del algoritmo. El LEGO EV3 fue programado con su IDE oficial utilizando lenguaje de bloques.
 
 ## Wall Following (Izquierdo)
 
 Para empezar, se inicializan los motores de movimiento como el B y el C, se establece la velocidad de movimiento al -20% de la velocidad máxima, y se establece que los motores mantengan su posición al finalizar su desplazamiento, esto con el fin de que los movimientos tengan mayor presición.
 Posteriormente se reinicia el ángulo del giroscopio, se calibra el sensor de color, y se establece el volumen de la bocina al 10% para reproducir un sonido al iniciar el algoritmo.
-Posteriormente se inicializa una variables "distance" a 30cm, que corresponde a la distancia minima para detectar un camino disponible al lado izquierdo por parte del ultrasonido.
+Posteriormente se inicializa una variables "distance" a 30cm, que corresponde a la distancia mínima para detectar un camino disponible al lado izquierdo por parte del ultrasonido.
 ![alt text](images/maze/maze_init.jpeg)
 
 Despues de inicializar el algoritmo, se introduce un bucle "forever", donde se manejan 3 condicionales:
@@ -23,7 +23,7 @@ A partir de esto, se realiza un giro a la derecha hasta que el giroscopio marque
 ![alt text](images/maze/maze_right.jpeg)
 
 ### Seguir recto
-En caso de que el sensor de color no detecte intencidad (sin ningún objeto en frente) y el ultrasonido detecte un muro en el costado izquierdo, el LEGO EV3 mantiene la posición y continua recto.
+En caso de que el sensor de color no detecte intensidad (sin ningún objeto en frente) y el ultrasonido detecte un muro en el costado izquierdo, el LEGO EV3 mantiene la posición y continúa recto.
 
 ![alt text](images/maze/maze_front.jpeg)
 
@@ -44,4 +44,6 @@ Una vez programado el algoritmo, se coloca en el laberinto real y se observa que
 </video>
 
 
-Se observa que, a pesar de que se establece la comparación con el giroscopio a 80°, el robot tiende a girar un ángulo mayor, sin embargo, no supone un problema para la dimenciones del laberinto.
+Se observa que, a pesar de que se establece la comparación con el giroscopio a 80°, el robot tiende a girar un ángulo mayor, sin embargo, no supone un problema para la dimensiones del laberinto.
+
+https://www.youtube.com/watch?v=dqVG9TifkD4&ab_channel=DanielEstebanMolanoGarz%C3%B3n
