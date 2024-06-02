@@ -1,8 +1,24 @@
 # Navegación
 
+La navegación consiste en el proceso de lograr alcanzar un destino determinado. Existen diferentes aproximaciones,  navegación planeada y la navegación basada en comportamientos son dos posibles caminos de lograrlo.
+
 ## Navegación Planeada
 
+Este tipo de navegación aunque requiere una etapa de procesameinto previo, permite la generación de trayectorias más eficientes y óptimas. Se caracteriza por:
+
+* Implica la creación de un plan de movimiento desde el punto de inicio hasta el destino **antes de que el robot comience a moverse**. 
+* Requiere que el robot tenga un conocimiento preciso de su posición y del entorno, utilizando técnicas de SLAM (Simultaneous Localization and Mapping) para construir y actualizar mapas.
+
+
 ## Navegación Basada en Comportamientos
+
+Este tipo de navegación es más reactiva y la toma de decisiones respecto al comportamiento a efectuar se decide como respuesta a las características del entorno inmediato como es percibido a través de los sensores.  Se caracteriza por:
+
+* Ser una estrategias de baja complejidad y específicas, como evitar obstáculos, seguir paredes, y buscar metas. Cada comportamiento se activa en respuesta a ciertas condiciones del entorno.
+* Gestión de comportamientos. Donde se selecciona en orden de entre los diferentes acciones simples que puede efectuar el robot.
+
+
+La respuesta del robot es más reactiva y flexible, permitiendo adaptaciones rápidas a cambios inmediatos en el entorno. Sin embargo, puede resultar en trayectorias menos óptimas y más erráticas.
 
 
 # Investigaciones Destacadas
@@ -14,6 +30,7 @@
 
 
 # Algoritmos Bug 
+
 Los algoritmos Bug estan basados en sensores, que pueden ser a distancia o de contacto para la detección de obstaculos, junto con odometría es posible conocer su posición actual en el plano.
 
 El movimiento en los algoritmos Bug se basan en dos principios, moverse en linea recta o seguir los bordes de algun objeto, donde el robot cambia entre uno y otro dependiendo de la información de los sensores.
