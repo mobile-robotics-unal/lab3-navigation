@@ -24,7 +24,7 @@ El montaje se realizó en una mesa de 160cm x 100cm, los obstaculos utilizados f
 
 El punto de origen se ubicó en el borde lateral derecho a una distancia de 60cm aproximadamente.
  
-
+![alt text](images/bug0/montaje.png)
 
 ## Algoritmo
 ### Inicialización
