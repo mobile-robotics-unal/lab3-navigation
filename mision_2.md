@@ -5,6 +5,18 @@ Esta misión tiene como objetivo que el LEGO EV3 sea capaz de salir de un laberi
 
 Para resolver el laberinto se utilizo el algoritmo Wall Following con el muro izquierdo, esto debido a su fácil implementación y la efectividad del algoritmo. El LEGO EV3 fue programado con su IDE oficial utilizando lenguaje de bloques.
 
+## Robot
+El robot utiliza 3 sensores para completar el algoritmo: ultrasonido para detectar la presencia o ausencia de muros a la izquierda, sensor de intensidad de luz en la parte frontal para detección de muros en frente del robot, y un giroscopio que permite controlar la rotación del robot.
+
+![alt text](images/maze/robotFront.jpeg)
+
+![alt text](images/maze/robotLeft.jpeg)
+
+
+El robot tiene una longitud de aproximadamente 17cm x 15cm, y el laberinto esta compuesto por libros que tienen un tamaño de 17cm x 24cm, de forma que las dimensiones del laberinto son lo suficientemente grandes como para que el robot pueda manobriar, el diagrama aproximado es el siguiente:
+
+![alt text](images/maze/mazeSchema.png)
+
 ## Wall Following (Izquierdo)
 
 Para empezar, se inicializan los motores de movimiento como el B y el C, se establece la velocidad de movimiento al -20% de la velocidad máxima, y se establece que los motores mantengan su posición al finalizar su desplazamiento, esto con el fin de que los movimientos tengan mayor presición.
