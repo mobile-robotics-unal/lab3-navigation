@@ -28,7 +28,7 @@ Despues de inicializar el algoritmo, se introduce un bucle "forever", donde se m
 
 ### Giro a la derecha
 
-En caso de que el sensor de color detecte una intencidad mayor a 0 (un objeto justo en frente) y el ultrasonido detecte una distancia menor a la distancia minima (un objeto cerca a la izquierda), implica que el único camino disponible es al costado derecho del robot. Cuando se detecta esta condición, el robot retrocede 20°, esto debido a que necesita apartarse ligeramente del muro frontal para poder realizar un giro a la derecha sin golpear el objeto. 
+En caso de que el sensor de color detecte una intensidad mayor a 0 (un objeto justo en frente) y el ultrasonido detecte una distancia menor a la distancia minima (un objeto cerca a la izquierda), implica que el único camino disponible es al costado derecho del robot. Cuando se detecta esta condición, el robot retrocede 20°, esto debido a que necesita apartarse ligeramente del muro frontal para poder realizar un giro a la derecha sin golpear el objeto. 
 Posteriormente se reinicia el ángulo en el giroscopio, donde se aplica un delay de 1 segundo. Este delay se debe a que el reinicio del giroscopio se realiza de forma asincrona, por lo que con este delay se asegura que el sensor este reinciado para la comparación que se aplica más adelante.
 A partir de esto, se realiza un giro a la derecha hasta que el giroscopio marque un valor superior a 80°, dando a entender que el robot completo el giro.
 
