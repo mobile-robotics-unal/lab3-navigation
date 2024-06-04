@@ -190,7 +190,7 @@ A partir de ello, cada estado tiene el siguiente código:
 #### go-to-goal
 El algoritmo toma la medición del ultrasonido y la compara con la distancia mínima de detección de objeto en frente, en caso de que se detecte presencia de obstaculo, se pasa al estado 'rotating'. 
 
-Si se detecta un obstaculo al costado izquierdo del robot, se entiendo que se esta rodeando un objeto, por lo que se pasa al estado 'avoid-obstacle'.
+Si se detecta un obstaculo al costado izquierdo del robot, se entiendo que se está rodeando un objeto, por lo que se pasa al estado 'avoid-obstacle'.
 
 Si no se detectan obstaculos, el robot continúa hacia la meta. Para ello se usa la función directionControl, que recibe la pose actual y el punto de meta, esta función se explicará en secciones posteriores.
 
@@ -231,7 +231,7 @@ Este estado se encarga de seguir al objeto de forma aproximada, esto debido a qu
 
 En caso de que el sensor lateral si detecte al objeto, este mantiene una valocidad lineal sin velocidad angular.
 
-Si la intencidad del sensor de luz es muy alta, quiere decir que el sensor esta a punto de chocar con el objeto, en ese caso, se realiza una breve desviación manteniendo una velocidad angular de 0.5 rad/s hasta que la intencidad disminuya.
+Si la intensidad del sensor de luz es muy alta, quiere decir que el sensor esta a punto de chocar con el objeto, en ese caso, se realiza una breve desviación manteniendo una velocidad angular de 0.5 rad/s hasta que la intencidad disminuya.
 
 Si el sensor de luz no detecta ningún objeto y el ultrasonido tampoco mide una distancia inferior a la mínima, quiere decir que el robot se alejó del obstaculo, para que el robot pueda continuar con su trayecto sin posibilidades de choques, el robot se aleja una distancia de aproximadamente 15cm en la dirección en la que se dirije, se cambia al estado 'repositioning':
 
@@ -294,7 +294,7 @@ Posteriormente se realiza el control sobre cada una de ellas con un control PI:
     [error_l, rotation_l, speed_l, integral_l] = speedController(newAngSpeed(2), angleList(i,2), speed_l, integral_l, l_motor, ts);
 ```
 
-Luego se añade la pose actual al historico de poses para la reconstrucción del camino, tambien se recalcula la distancia hasta la meta:
+Luego se añade la pose actual al historico de poses para la reconstrucción del camino, también se recalcula la distancia hasta la meta:
 
 ```Matlab
     % Append position to list for plot
