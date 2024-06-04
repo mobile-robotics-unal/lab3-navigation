@@ -16,3 +16,5 @@ Team 1:
 ## 1. [Misión 1](mision_1.md)
 
 ## 1. [Misión 2](mision_2.md)
+
+Video del laboratorio en YouTube: https://youtu.be/Eci2OJrqXEo
